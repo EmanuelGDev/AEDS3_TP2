@@ -4,7 +4,7 @@ Este é um trabalho prático desenvolvido para a disciplina de Algoritmos e Estr
 ## Conteúdo
 
 1. [Compressor de Texto](#compressor-de-texto)
-2. [Observaçõoes Gerais](#observações-gerais)
+2. [Observações Gerais](#observações-gerais)
 3. [Autores](#autores)
 
 ## Compressor de Texto
