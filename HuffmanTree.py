@@ -16,11 +16,11 @@ class HuffmanTree:
 			if no is None: return
 
 			if no.left is not None:
-				no.left.bin = no.bin +'1'	# sempre que for para a esquerda, concatena '1' ao código do filho
+				no.left.bin = no.bin +'0'	# sempre que for para a esquerda, concatena '0' ao código do filho
 				self.codifica(no.left)
 
 			if no.right is not None:
-				no.right.bin = no.bin + '0'	# sempre que for para a direita, concatena '0' ao código do filho
+				no.right.bin = no.bin + '1'	# sempre que for para a direita, concatena '1' ao código do filho
 				self.codifica(no.right)
 
 			return
