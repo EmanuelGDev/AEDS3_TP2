@@ -40,5 +40,6 @@ O Compressor de Texto tem duas funções principais: Compactar e descompactar. A
 ## Autores
 - Emanuel Guimarães Santana - emanuel.guimaraes@ufvjm.edu.br
 - Robson da Lomba Campos Junior - robson.campos@ufvjm.edu.br
+- Evelen Pinheiro de Oliveira - evelen.pinheiro@ufvjm.edu.br
 - Samuel Couto Monteiro Assunção - monteiro.samuel@ufvjm.edu.br
 - Marcela Cristina Santos Cruz - marcela.cruz@ufvjm.edu.br
