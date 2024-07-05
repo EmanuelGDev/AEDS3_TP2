@@ -31,9 +31,10 @@ listaNos.criaArv()
 ht.codifica(listaNos.raiz[0])
 #ht.navegar(listaNos.raiz[0])
 
-creatFile("saida.huf",ht.arvToBin(listaNos.raiz[0])+'\n'+ht.getTextBin(listaNos.raiz[0],listaNos.texto))
-creatFile("dicionario.txt", listaNos.raiz[0])
+creatFile("saida.huf", ht.getTextBin(listaNos.raiz[0],listaNos.texto))
 
-print(ht.getTextBin(listaNos.raiz[0],listaNos.texto))
+creatFile("dicionario.txt", ht.arvToBin(listaNos.raiz[0]))
 
-print(ht.decodeBin(listaNos.raiz[0],ht.getTextBin(listaNos.raiz[0],listaNos.texto)))
+print("Texto Codificado: " , ht.getTextBin(listaNos.raiz[0],listaNos.texto))
+
+print("Texto Decodificado: " , ht.decodeBin(listaNos.raiz[0],ht.getTextBin(listaNos.raiz[0],listaNos.texto)))
