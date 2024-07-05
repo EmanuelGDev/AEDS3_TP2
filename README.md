@@ -33,7 +33,7 @@ O Compressor de Texto tem duas funções principais: Compactar e descompactar. A
 1. Compile o código.
 2. Execute o programa.
 3. A interface irá te dar as opções de compactar e descompactar, basta escolher a opção e selecionar o arquivo desejado.
-4. O arquivo deve seguir as seguintes recomendações: Caso for compactar, use como entrada um arquivo .txt. Caso for descompactar, use como entrada um arquivo .huf e um .txt contendo os códigos das letras gerado pela compactação.
+4. O arquivo deve seguir as seguintes recomendações: Caso for compactar, use como entrada um arquivo .txt. Caso for descompactar, use como entrada um arquivo .huf e um .txt contendo os códigos das letras gerados pela compactação.
 
 ## Observações Gerais
 
