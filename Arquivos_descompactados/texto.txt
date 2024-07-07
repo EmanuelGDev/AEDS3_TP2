@@ -1,1 +1,0 @@
-Esse texto sera codificado e decodificado

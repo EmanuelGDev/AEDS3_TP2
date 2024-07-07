@@ -72,6 +72,6 @@ class Huffman:
 
 
 huffman = Huffman()
-arquivo_entrada = 'entrada.txt'
+arquivo_entrada = 'tamanho100000desordenado.txt'
 arquivo_saida = 'saida.huf'
 huffman.comprimir_arquivo(arquivo_entrada, arquivo_saida)
