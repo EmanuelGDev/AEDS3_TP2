@@ -124,7 +124,7 @@ class Huffman:
 
 if __name__ == '__main__':
     huffman = Huffman()
-    arquivo_entrada = 'entrada.txt'
+    arquivo_entrada = 'output.txt'
     arquivo_saida = 'saida.huf'
     arquivo_descomprimido = 'saida_descomprimida.txt'
     arquivo_dicionario = 'dicionario.txt'
