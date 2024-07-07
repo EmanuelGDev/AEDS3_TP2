@@ -30,6 +30,7 @@ O Compressor de Texto tem duas funções principais: Compactar e descompactar. A
 4. O arquivo deve seguir as seguintes recomendações: Caso for compactar, use como entrada um arquivo .txt. Caso for descompactar, use como entrada um arquivo .huf e um .txt contendo os códigos das letras gerados pela compactação (Dicionário).
 
 ## Observações Gerais
+- É importante que o arquivo de entrada não contenha caracteres especiais. Ele precisa seguir o modelo dos arquivos de entrada enviados como exemplo.
 
 
 ## Autores
