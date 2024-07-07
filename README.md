@@ -31,6 +31,7 @@ O Compressor de Texto tem duas funções principais: Compactar e descompactar. A
 
 ## Observações Gerais
 - É importante que o arquivo de entrada não contenha caracteres especiais. Ele precisa seguir o modelo dos arquivos de entrada enviados como exemplo.
+- O arquivo de entrada também não pode conter quebras de linhas e/ou espaços.
 
 
 ## Autores
