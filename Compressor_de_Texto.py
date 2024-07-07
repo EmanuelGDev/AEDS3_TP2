@@ -1,4 +1,5 @@
 import heapq
+import os
 
 class NodoHuffman:
     def __init__(self, caractere=None, frequencia=0):
@@ -43,7 +44,7 @@ class Huffman:
             codigo += self.codigos[caractere]
         return codigo
     
-    def comprimir_arquivo(self, arquivo_entrada, arquivo_saida):
+    def comprimir_arquivo(self, arquivo_entrada, arquivo_saida, arquivo_dicionario):
         # Contagem de frequências dos caracteres no arquivo de entrada
         frequencias = {}
         with open(arquivo_entrada, 'r', encoding='utf-8') as f:
@@ -70,7 +71,7 @@ class Huffman:
             f.write(bytes_codificados)
         
         # Escrever o dicionário de Huffman em um arquivo texto
-        with open('dicionario.txt', 'w', encoding='utf-8') as f_dict:
+        with open(arquivo_dicionario, 'w', encoding='utf-8') as f_dict:
             for caractere, codigo in self.codigos.items():
                 f_dict.write(f"{caractere}:{codigo}\n")
     
@@ -122,17 +123,31 @@ class Huffman:
         with open(arquivo_descomprimido, 'w', encoding='utf-8') as f:
             f.write(texto_decodificado)
 
-if __name__ == '__main__':
-    huffman = Huffman()
-    arquivo_entrada = 'output.txt'
-    arquivo_saida = 'saida.huf'
-    arquivo_descomprimido = 'saida_descomprimida.txt'
-    arquivo_dicionario = 'dicionario.txt'
+
+huffman = Huffman()
     
-    # Comprimir o arquivo de entrada
-    huffman.comprimir_arquivo(arquivo_entrada, arquivo_saida)
-    print(f"Arquivo comprimido '{arquivo_entrada}' para '{arquivo_saida}' e dicionário gerado em '{arquivo_dicionario}'")
+arquivo = 'milhao_de_letras'
     
-    # Descomprimir o arquivo de saída usando o dicionário gerado
-    huffman.descomprimir_arquivo(arquivo_saida, arquivo_dicionario, arquivo_descomprimido)
-    print(f"Arquivo '{arquivo_saida}' descomprimido usando '{arquivo_dicionario}' para '{arquivo_descomprimido}'")
+entrada = './Arquivos_descompactados/' + arquivo + ".txt"
+pasta_compactados = './Arquivos_compactados/'
+pasta_dicionario = './dicionario/'
+pasta_descompactados = './Arquivos_descomprimidos/'
+    
+if not os.path.exists(pasta_compactados):
+    os.makedirs(pasta_compactados)
+if not os.path.exists(pasta_dicionario):
+    os.makedirs(pasta_dicionario)
+if not os.path.exists(pasta_descompactados):
+    os.makedirs(pasta_descompactados)
+
+arquivo_saida = pasta_compactados + arquivo + '.huf'
+arquivo_dicionario = pasta_dicionario + arquivo + '_dicionario.txt'
+arquivo_descomprimido = pasta_descompactados + arquivo + '_descomprimido.txt'
+    
+# Comprimir o arquivo de entrada
+huffman.comprimir_arquivo(entrada, arquivo_saida, arquivo_dicionario)
+print(f"Arquivo comprimido '{entrada}' para '{arquivo_saida}' e dicionário gerado em '{arquivo_dicionario}'")
+    
+# Descomprimir o arquivo de saída usando o dicionário gerado
+huffman.descomprimir_arquivo(arquivo_saida, arquivo_dicionario, arquivo_descomprimido)
+print(f"Arquivo '{arquivo_saida}' descomprimido usando '{arquivo_dicionario}' para '{arquivo_descomprimido}'")
