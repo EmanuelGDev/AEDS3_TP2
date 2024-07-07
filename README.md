@@ -15,7 +15,7 @@ O Compressor de Texto tem duas funções principais: Compactar e descompactar. A
 
 #### Estruturas de Dados
 - **NodoHuffman**: Objetos dessa classe serão os nós para a árvore binária de Huffman
-- **Huffman**: Essa classe é a que a responsável por todo funcionamento do algoritmo, desde gerar a árvore até realizar a compressão
+- **Huffman**: Essa classe é a responsável por todo funcionamento do algoritmo, desde gerar a árvore até realizar a compressão
 
 #### Funcionalidades
 - Compressão de Arquivo: Comprime um arquivo de texto utilizando o algoritmo de Huffman.
