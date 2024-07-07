@@ -21,7 +21,7 @@ O Compressor de Texto tem duas funções principais: Compactar e descompactar. A
 
 #### Funções 
 
-- `def navegar()`: Apenas navega pela árvore e imprime na tela os elementos em pré-ordem
+- `def navegar()`: Apenas navega pela árvore e imprime na tela os elementos em pré-ordem.
 - `def codifica()`: Gera o código em binário para cada nó da árvore
 - `def getTextBin()`: A partir da árvore e de uma lista com o texto original, retorna uma string com o texto em binário conforme o código de cada caracter na árvore
 - `def getBinLetter()`: Procura um dado caractere na árvore e retorna seu código
