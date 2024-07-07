@@ -126,7 +126,7 @@ class Huffman:
 
 huffman = Huffman()
     
-arquivo = 'milhao_de_letras'
+arquivo = '1000000caracteres'
     
 entrada = './Arquivos_descompactados/' + arquivo + ".txt"
 pasta_compactados = './Arquivos_compactados/'
