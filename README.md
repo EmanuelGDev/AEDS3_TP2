@@ -24,14 +24,17 @@ O Compressor de Texto tem duas funções principais: Compactar e descompactar. A
   
 ### Como Usar
 
-1. Compile o código.
-2. Execute o programa.
-3. A interface irá te dar as opções de compactar e descompactar, basta escolher a opção e selecionar o arquivo desejado.
-4. O arquivo deve seguir as seguintes recomendações: Caso for compactar, use como entrada um arquivo .txt. Caso for descompactar, use como entrada um arquivo .huf e um .txt contendo os códigos das letras gerados pela compactação (Dicionário).
+1. Instale as bibliotecas necessárias caso ainda não as tenha (tkinter, tkinterdnd2 e as demais sugeridas pelo terminal do linux).
+2. Compile o código.
+3. Execute o programa.
+4. A interface irá te dar as opções de compactar e descompactar, basta escolher a opção e selecionar o arquivo desejado.
+5. O arquivo deve seguir as seguintes recomendações: Caso for compactar, use como entrada um arquivo .txt. Caso for descompactar, use como entrada um arquivo .huf e um .txt contendo os códigos das letras gerados pela compactação (Dicionário).
 
 ## Observações Gerais
 - É importante que o arquivo de entrada não contenha caracteres especiais. Ele precisa seguir o modelo dos arquivos de entrada enviados como exemplo.
 - O arquivo de entrada também não pode conter quebras de linhas e/ou espaços.
+- Certifique-se de que o compressor esteja no mesmo diretório da pasta "img" pois nela contém imagens necessárias para a execução da interface.
+- As imagens não serão carregadas, nem a interface funcionará caso as bibliotecas necessárias não estejam instaladas corretamente.
 
 
 ## Autores
