@@ -179,7 +179,7 @@ menu_iniciar = TkinterDnD.Tk()
 
 menu_iniciar.title("Compressor de Arquivos")
 menu_iniciar['bg'] = "#151515"
-photo = PhotoImage(file="img\\disquete.png")
+photo = PhotoImage(file="./img/disquete.png")
 menu_iniciar.iconphoto(False, photo)
 
 #Dimensões
@@ -208,7 +208,7 @@ bt_compactar = Button(frame_opcoes, text="COMPACTAR", font="Courier 10 bold", fg
 bt_descompactar = Button(frame_opcoes, text="DESCOMPACTAR", font="Courier 10 bold", fg="#151515", disabledforeground="#FFFFFF", command=lambda: show_frame(filho2_descompactar, bt_descompactar, bt_compactar))
 
 #IMAGEM DOS BOTÕES PASTAS
-image_path = "img\\icon.png"
+image_path = "./img/icon.png"
 bt_image = PhotoImage(file=image_path)
 
 frame_pai = Frame(frame_footer, bg="#666666")
